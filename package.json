@@ -1,0 +1,21 @@
+{
+  "name": "pi-herdr-reload-all",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Safely reload every live Pi session managed by Herdr with one Pi command.",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "herdr",
+    "automation"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/herdr-reload-all/index.ts"
+    ]
+  }
+}
