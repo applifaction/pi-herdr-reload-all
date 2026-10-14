@@ -100,6 +100,7 @@ Project layout:
 │       ├── index.ts
 │       └── reload_all_sessions.py
 ├── .gitignore
+├── package-lock.json
 ├── package.json
 └── README.md
 ```
