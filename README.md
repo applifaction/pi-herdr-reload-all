@@ -2,7 +2,7 @@
 
 Reload every live [Pi](https://github.com/earendil-works/pi) session managed by Herdr with one deterministic command.
 
-`/herdr-reload-all` safely fans out Pi's `/reload` command without starting an LLM turn. Idle sessions reload immediately, active sessions reload after they settle, and the session that launched the command reloads itself through Pi's native extension API.
+`/reload-all` safely fans out Pi's `/reload` command without starting an LLM turn. Idle sessions reload immediately, active sessions reload after they settle, and the session that launched the command reloads itself through Pi's native extension API.
 
 ## Why
 
@@ -44,7 +44,7 @@ pi remove git:github.com/applifaction/pi-herdr-reload-all
 Run the command without parameters:
 
 ```text
-/herdr-reload-all
+/reload-all
 ```
 
 There is no preview step. The command immediately submits or schedules `/reload` for every Pi session returned by `herdr agent list`.

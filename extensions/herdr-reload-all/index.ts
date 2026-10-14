@@ -102,11 +102,11 @@ function errorDetail(result: BackendResult): string {
 export default function herdrReloadAll(pi: ExtensionAPI) {
   let running = false;
 
-  pi.registerCommand("herdr-reload-all", {
+  pi.registerCommand("reload-all", {
     description: "Alle laufenden Pi-Sessions sicher neu laden",
     handler: async (args, ctx) => {
       if (args.trim()) {
-        ctx.ui.notify("Verwendung: /herdr-reload-all (keine Parameter)", "warning");
+        ctx.ui.notify("Verwendung: /reload-all (keine Parameter)", "warning");
         return;
       }
 
